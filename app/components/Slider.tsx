@@ -1,39 +1,16 @@
 import Autoplay from 'embla-carousel-autoplay';
-import {
-    Carousel,
-    CarouselApi,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from '@/components/ui/carousel';
-import { useEffect, useRef, useState } from 'react';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import { useRef } from 'react';
 
 export function Slider() {
-    const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
-    const [api, setApi] = useState<CarouselApi>();
-    const [current, setCurrent] = useState(0);
-    const [count, setCount] = useState(0);
+    const plugin = useRef(Autoplay({ delay: 3500, stopOnInteraction: false }));
 
-    useEffect(() => {
-        if (!api) {
-            return;
-        }
-
-        setCount(api.scrollSnapList().length);
-        setCurrent(api.selectedScrollSnap() + 1);
-
-        api.on('select', () => {
-            setCurrent(api.selectedScrollSnap() + 1);
-        });
-    }, [api]);
-
-    const items = ['dak-met-wapen.jpg', 'huis-afstand.jpg', 'overkapping-afstand.jpg', 'uitbouw-2.jpg'];
+    const items = ['dak-met-wapen.jpg', 'huis-afstand.jpg', 'overkapping-afstand.jpg', 'dakkapel.jpg'];
 
     return (
         <div className="relative">
             <section className="absolute left-0 top-0 z-20 w-full h-full text-white flex items-center justify-center bg-black bg-opacity-30">
-                <div className="px-4 lg:flex lg:h-screen lg:items-center">
+                <div className="px-4 lg:flex lg:h-[400px] lg:items-center">
                     <div className="mx-auto max-w-xl text-center">
                         <h1 className="text-3xl font-extrabold sm:text-5xl">
                             Welkom bij
@@ -56,15 +33,12 @@ export function Slider() {
             <Carousel
                 plugins={[plugin.current]}
                 opts={{
-                    align: 'start',
+                    // align: 'start',
                     loop: true,
                 }}
-                setApi={setApi}
-                onMouseEnter={plugin.current.stop}
-                onMouseLeave={plugin.current.reset}
                 className="w-full z-10"
             >
-                <CarouselContent className="w-full h-screen">
+                <CarouselContent className="w-full h-[700px]">
                     {items.map((item, index) => (
                         <CarouselItem
                             key={index}
@@ -79,8 +53,8 @@ export function Slider() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                {/* <CarouselPrevious />
+                <CarouselNext /> */}
             </Carousel>
         </div>
     );

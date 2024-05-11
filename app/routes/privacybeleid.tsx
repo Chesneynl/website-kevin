@@ -1,9 +1,9 @@
 import type { MetaFunction } from '@remix-run/node';
 import BackgroundImageText from '~/components/BannerImage';
-import { metaTitle } from '~/lib/helpers/meta';
+import { getMeta } from '~/lib/helpers/meta';
 
 export const meta: MetaFunction = () => {
-    return [{ title: metaTitle('Privacybeleid') }, { name: 'description', content: 'Welcome to Remix!' }];
+    return getMeta('Privacybeleid');
 };
 
 export default function Privacybeleid() {

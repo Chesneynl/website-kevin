@@ -1,3 +1,5 @@
+import { Link } from '@remix-run/react';
+
 export function Showcase() {
     return (
         <section>
@@ -5,7 +7,7 @@ export function Showcase() {
                 <span className="h-px flex-1 bg-gray-100"></span>
             </span>
 
-            <div className="mx-auto max-w-screen-2xl px-4 py-24 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-screen-2xl px-4 py-10 md:py-24 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1  lg:grid-cols-2">
                     <div className="relative z-10 lg:py-16">
                         <div className="relative h-64 sm:h-80 lg:h-full">
@@ -40,12 +42,12 @@ export function Showcase() {
                                 met een prachtige, functionele dakkapel.
                             </p>
 
-                            <a
-                                href="#"
+                            <Link
+                                to="/projecten/dakkapellen"
                                 className="mt-8 inline-block rounded border border-primary bg-primary px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary"
                             >
                                 Meer Informatie
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

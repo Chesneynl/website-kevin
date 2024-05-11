@@ -1,16 +1,10 @@
 import type { MetaFunction } from '@remix-run/node';
 import { LatestWork, Showcase, Slider } from '~/components';
 import { USPs } from '~/components/USPs';
+import { getMeta } from '~/lib/helpers/meta';
 
 export const meta: MetaFunction = () => {
-    return [
-        { title: 'Maatwerk Timmerwerk en Renovaties | Stulen bouwservice | Omgeving Utrecht ' },
-        {
-            name: 'description',
-            content:
-                'Ontdek topkwaliteit in timmerwerk, burgerlijke en utiliteitsbouw, en renovatie werkzaamheden door uw lokale expert. Betrouwbaar, duurzaam en op maat gemaakt voor al uw bouwbehoeften. Neem contact op voor uw project!',
-        },
-    ];
+    return getMeta('Maatwerk Timmerwerk en Renovatie');
 };
 
 // export const loader = async ({ params }) => {

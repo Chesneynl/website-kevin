@@ -1,8 +1,10 @@
 import type { MetaFunction } from '@remix-run/node';
 import BackgroundImageText from '~/components/BannerImage';
 
+import { getMeta } from '~/lib/helpers/meta';
+
 export const meta: MetaFunction = () => {
-    return [{ title: 'New Remix App' }, { name: 'description', content: 'Welcome to Remix!' }];
+    return getMeta('Algemene Voorwaarden');
 };
 
 export default function Privacybeleid() {

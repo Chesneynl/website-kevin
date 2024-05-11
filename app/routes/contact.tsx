@@ -3,9 +3,10 @@ import { ContactForm } from '~/components';
 import BackgroundImageText from '~/components/BannerImage';
 import { Resend } from 'resend';
 import { z } from 'zod';
+import { getMeta } from '~/lib/helpers/meta';
 
 export const meta: MetaFunction = () => {
-    return [{ title: 'New Remix App' }, { name: 'description', content: 'Welcome to Remix!' }];
+    return getMeta('Contact');
 };
 
 const ContactFormSchema = z.object({
@@ -59,7 +60,7 @@ export const action = async ({ request }: { request: Request }) => {
 export default function Index() {
     return (
         <div>
-            <BackgroundImageText title="Contact" imageUrl="/images/uitbouw-2.jpg" />
+            <BackgroundImageText title="Contact" imageUrl="/images/dakkapel.jpg" />
             <ContactForm />
         </div>
     );

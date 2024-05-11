@@ -38,8 +38,8 @@ function Header() {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     <div className="relative">
-                        <button
-                            type="button"
+                        <Link
+                            to="/projecten"
                             className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
                             aria-expanded="false"
                         >
@@ -56,7 +56,7 @@ function Header() {
                                     clipRule="evenodd"
                                 />
                             </svg> */}
-                        </button>
+                        </Link>
 
                         {/* <!--
           'Product' flyout menu, show/hide based on flyout menu state.
