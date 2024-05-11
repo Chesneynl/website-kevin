@@ -5,7 +5,7 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="bg-white">
+        <header className="bg-white shadow-sm">
             <nav className="container flex items-center justify-between p-2 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <Link to="/" className="">
@@ -43,8 +43,8 @@ function Header() {
                             className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
                             aria-expanded="false"
                         >
-                            Product
-                            <svg
+                            Onze projecten
+                            {/* <svg
                                 className="h-5 w-5 flex-none text-gray-400"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -55,7 +55,7 @@ function Header() {
                                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                                     clipRule="evenodd"
                                 />
-                            </svg>
+                            </svg> */}
                         </button>
 
                         {/* <!--
@@ -244,12 +244,6 @@ function Header() {
                         </div> */}
                     </div>
 
-                    <Link to="#" className="text-sm font-semibold leading-6 text-gray-900">
-                        Features
-                    </Link>
-                    <Link to="#" className="text-sm font-semibold leading-6 text-gray-900">
-                        Marketplace
-                    </Link>
                     <Link to="/contact" className="text-sm font-semibold leading-6 text-gray-900">
                         Contact
                     </Link>
@@ -370,7 +364,7 @@ function Header() {
                             </div>
                             <div>
                                 <a
-                                    href={'tel:++31614653885'}
+                                    href={'tel:+31614653885'}
                                     className="mt-8 inline-block rounded-full border border-primary px-12 py-3 text-sm font-medium text-primary hover:bg-primary hover:text-white focus:outline-none focus:ring active:bg-primary"
                                 >
                                     Bel ons nu

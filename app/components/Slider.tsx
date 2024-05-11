@@ -1,4 +1,3 @@
-import { Link } from '@remix-run/react';
 import Autoplay from 'embla-carousel-autoplay';
 import {
     Carousel,
@@ -29,6 +28,8 @@ export function Slider() {
         });
     }, [api]);
 
+    const items = ['dak-met-wapen.jpg', 'huis-afstand.jpg', 'overkapping-afstand.jpg', 'uitbouw-2.jpg'];
+
     return (
         <div className="relative">
             <section className="absolute left-0 top-0 z-20 w-full h-full text-white flex items-center justify-center bg-black bg-opacity-30">
@@ -43,18 +44,11 @@ export function Slider() {
 
                         <div className="mt-8 flex flex-wrap justify-center gap-4">
                             <a
-                                className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-primary focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-                                href="#"
+                                className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-primary focus:outline-none focus:ring active:bg-primary sm:w-auto"
+                                href="tel:+31614653885"
                             >
                                 Bel ons nu
                             </a>
-
-                            {/* <a
-                                className="block w-full rounded px-12 py-3 text-sm font-medium text-primary shadow hover:text-primary focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-                                href="#"
-                            >
-                                Learn More
-                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -71,12 +65,12 @@ export function Slider() {
                 className="w-full z-10"
             >
                 <CarouselContent className="w-full h-screen">
-                    {Array.from({ length: 5 }).map((_, index) => (
+                    {items.map((item, index) => (
                         <CarouselItem
                             key={index}
                             className="min-w-0 shrink-0 grow-0 basis-full pl-0"
                             style={{
-                                backgroundImage: `url(/images/overkapping-afstand.jpg)`,
+                                backgroundImage: `url(/images/${item})`,
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}

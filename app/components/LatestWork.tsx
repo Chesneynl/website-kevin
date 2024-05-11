@@ -1,23 +1,16 @@
 import { Link } from '@remix-run/react';
-import Autoplay from 'embla-carousel-autoplay';
-import {
-    Carousel,
-    CarouselApi,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from '@/components/ui/carousel';
-import { useEffect, useRef, useState } from 'react';
 
 export function LatestWork() {
     return (
         <section>
-            <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+            <span className="flex items-center">
+                <span className="h-px flex-1 bg-gray-100"></span>
+            </span>
+            <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-24 text-center">
                 <header className="">
                     <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Recente Projecten en Realisaties</h2>
 
-                    <p className="mt-4 max-w-xl text-gray-500">
+                    <p className="mt-4 max-w-xl text-gray-500 mx-auto">
                         Ontdek onze meest recente projecten waarin we ons vakmanschap en onze aandacht voor detail
                         tonen. Elke afbeelding vertegenwoordigt een uniek verhaal van samenwerking en technische
                         uitmuntendheid. Van uitgebreide renovaties tot maatwerk timmerwerk en complexe utiliteitsbouw,
@@ -35,11 +28,7 @@ export function LatestWork() {
                             />
 
                             <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                                <h3 className="text-xl font-medium text-white">Casual Trainers</h3>
-
-                                {/* <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                                    Shop Now
-                                </span> */}
+                                <h3 className="text-xl font-medium text-white">Overkapping</h3>
                             </div>
                         </Link>
                     </li>
@@ -53,11 +42,7 @@ export function LatestWork() {
                             />
 
                             <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                                <h3 className="text-xl font-medium text-white">Winter Jumpers</h3>
-
-                                {/* <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                                    Shop Now
-                                </span> */}
+                                <h3 className="text-xl font-medium text-white">Dakkapel</h3>
                             </div>
                         </Link>
                     </li>
@@ -71,11 +56,7 @@ export function LatestWork() {
                             />
 
                             <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                                <h3 className="text-xl font-medium text-white">Skinny Jeans Blue</h3>
-
-                                {/* <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                                    Shop Now
-                                </span> */}
+                                <h3 className="text-xl font-medium text-white">Dak</h3>
                             </div>
                         </Link>
                     </li>

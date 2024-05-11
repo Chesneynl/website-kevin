@@ -4,9 +4,8 @@ import { ShortText } from '~/components';
 export default function Footer() {
     return (
         <footer className="bg-white">
-            <div className="container px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+            <div className="container px-4 pb-8 sm:px-6 lg:px-8">
                 <span className="flex items-center">
-                    <span className="h-px flex-1 bg-gray-100"></span>
                     <span className="h-px flex-1 bg-gray-100"></span>
                 </span>
                 <ShortText
@@ -14,30 +13,21 @@ export default function Footer() {
                     description="Heeft u vragen of wilt u meer informatie? Ons team staat klaar om u te helpen! Bel ons nu voor persoonlijk advies."
                     button={{
                         text: 'Bel ons nu',
-                        link: 'tel: +31 614653885',
+                        link: 'tel:+31614653885',
                     }}
                 />
 
                 <div className="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
                     <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
                         <li>
-                            <Link to="#" className="text-gray-500 transition hover:opacity-75">
-                                {' '}
-                                Terms & Conditions{' '}
+                            <Link to="/algemene-voorwaarden" className="text-gray-500 transition hover:opacity-75">
+                                Algemene voorwaarden
                             </Link>
                         </li>
 
                         <li>
-                            <Link to="#" className="text-gray-500 transition hover:opacity-75">
-                                {' '}
-                                Privacy Policy{' '}
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="#" className="text-gray-500 transition hover:opacity-75">
-                                {' '}
-                                Cookies{' '}
+                            <Link to="/privacybeleid" className="text-gray-500 transition hover:opacity-75">
+                                Privacybeleid{' '}
                             </Link>
                         </li>
                     </ul>
@@ -53,7 +43,7 @@ export default function Footer() {
                                 <span className="">KVK: 76840484</span>
                             </Link>
                         </li>
-
+                        {/* 
                         <li>
                             <Link
                                 to="#"
@@ -71,7 +61,7 @@ export default function Footer() {
                                     />
                                 </svg>
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

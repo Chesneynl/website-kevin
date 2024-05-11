@@ -1,5 +1,6 @@
 import type { MetaFunction } from '@remix-run/node';
-import { FAQ, LatestWork, ShortText, Slider } from '~/components';
+import { LatestWork, Showcase, Slider } from '~/components';
+import { USPs } from '~/components/USPs';
 
 export const meta: MetaFunction = () => {
     return [
@@ -30,7 +31,7 @@ export default function Index() {
     return (
         <div className="w-full">
             <Slider />
-            <div className="container px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24 text-center">
+            <div className="container px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24 lg:pb-24 text-center max-w-5xl">
                 <h2 className="text-xl font-extrabold text-gray-900 sm:text-3xl">
                     Ontdek Vakmanschap in Bouw en Renovatie bij Stulen bouwservice
                 </h2>
@@ -44,7 +45,9 @@ export default function Index() {
                     betekenen en neem vandaag nog contact met ons op voor een vrijblijvende offerte.
                 </p>
             </div>
+            <Showcase />
             <LatestWork />
+            <USPs />
         </div>
     );
 }
