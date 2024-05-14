@@ -1,8 +1,6 @@
 import { createRequestHandler } from '@remix-run/express';
 import express from 'express';
 
-console.log(process.env.NODE_ENV === 'production');
-
 const viteDevServer =
     process.env.NODE_ENV === 'production'
         ? null
