@@ -36,7 +36,7 @@ function Header() {
                         </svg>
                     </button>
                 </div>
-                <div className="hidden lg:flex lg:gap-x-12">
+                <div className="hidden lg:flex lg:gap-x-12 items-center">
                     <div className="relative">
                         <Link
                             to="/projecten"
@@ -247,6 +247,12 @@ function Header() {
                     <Link to="/contact" className="text-sm font-semibold leading-6 text-gray-900">
                         Contact
                     </Link>
+                    <a
+                        className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-primary focus:outline-none focus:ring active:bg-primary sm:w-auto"
+                        href="tel:+31614653885"
+                    >
+                        Bel ons nu
+                    </a>
                 </div>
             </nav>
             <div className={`lg:hidden relative z-30 ${!isOpen && 'hidden'}`} role="dialog" aria-modal="true">
