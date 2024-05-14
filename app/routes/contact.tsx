@@ -60,7 +60,7 @@ export const action = async ({ request }: { request: Request }) => {
 export default function Index() {
     return (
         <div>
-            <BackgroundImageText title="Contact" imageUrl="/images/dakkapel.jpg" />
+            <BackgroundImageText title="Contact" imageUrl="/images/dakkapel.webp" />
             <ContactForm />
         </div>
     );

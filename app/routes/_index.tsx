@@ -7,21 +7,7 @@ export const meta: MetaFunction = () => {
     return getMeta('Maatwerk Timmerwerk en Renovatie');
 };
 
-// export const loader = async ({ params }) => {
-//     console.log({ params });
-//     const contact = null;
-
-//     if (!contact) {
-//         throw new Response('Not Found', { status: 404 });
-//     }
-//     return json({ contact });
-// };
-
 export default function Index() {
-    // const { contact } = useLoaderData<typeof loader>();
-
-    // console.log({ contact });
-
     return (
         <div className="w-full">
             <Slider />

@@ -5,7 +5,7 @@ import { useRef } from 'react';
 export function Slider() {
     const plugin = useRef(Autoplay({ delay: 3500, stopOnInteraction: false }));
 
-    const items = ['dak-met-wapen.jpg', 'huis-afstand.jpg', 'overkapping-afstand.jpg', 'dakkapel.jpg'];
+    const items = ['dak-met-wapen.webp', 'huis-afstand.webp', 'overkapping-afstand.webp', 'dakkapel.webp'];
 
     return (
         <div className="relative">
@@ -49,7 +49,7 @@ export function Slider() {
                                 backgroundPosition: 'center',
                             }}
                         >
-                            {/* <img src={`/images/overkapping-afstand.jpg`} alt={`${index}`} /> */}
+                            {/* <img src={`/images/overkapping-afstand.webp`} alt={`${index}`} /> */}
                         </CarouselItem>
                     ))}
                 </CarouselContent>

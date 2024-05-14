@@ -20,10 +20,10 @@ export function LatestWork() {
 
                 <ul className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
                     <li>
-                        <Link to="#" className="group relative block">
+                        <Link to="/projecten/overkapping" className="group relative block">
                             <img
-                                src="/images/overkapping.jpg"
-                                alt=""
+                                src="/images/overkapping.webp"
+                                alt="Overkapping"
                                 className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
                             />
 
@@ -34,10 +34,10 @@ export function LatestWork() {
                     </li>
 
                     <li>
-                        <Link to="#" className="group relative block">
+                        <Link to="/projecten/dakkapel" className="group relative block">
                             <img
-                                src="/images/dakkapel.jpg"
-                                alt=""
+                                src="/images/dakkapel.webp"
+                                alt="Dakkapel"
                                 className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
                             />
 
@@ -48,15 +48,17 @@ export function LatestWork() {
                     </li>
 
                     <li className="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
-                        <Link to="#" className="group relative block">
+                        <Link to="/projecten/dak-renovatie" className="group relative block">
                             <img
-                                src="/images/dak-met-wapen.jpg"
-                                alt=""
+                                src="/images/dak-met-wapen.webp"
+                                alt="dak met wapen"
                                 className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
                             />
 
                             <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                                <h3 className="text-xl font-medium text-white">Dak</h3>
+                                <h3 className="text-xl font-medium text-white">
+                                    Dak renovatie met het wapen van Utrecht
+                                </h3>
                             </div>
                         </Link>
                     </li>

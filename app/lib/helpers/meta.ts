@@ -3,7 +3,7 @@ export function getMeta(title: string) {
         { title: `${title} | Stulen bouwservice | Omgeving Utrecht ` },
         {
             property: 'og:image',
-            content: '/images/dak-met-wapen.jpg',
+            content: '/images/dak-met-wapen.webp',
         },
         {
             name: 'description',

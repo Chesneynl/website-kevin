@@ -13,7 +13,7 @@ export function Showcase() {
                         <div className="relative h-64 sm:h-80 lg:h-full">
                             <img
                                 alt=""
-                                src="/images/huis-afstand.jpg"
+                                src="/images/huis-afstand.webp"
                                 className="absolute inset-0 h-full w-full object-cover"
                             />
                         </div>
@@ -43,7 +43,7 @@ export function Showcase() {
                             </p>
 
                             <Link
-                                to="/projecten/dakkapellen"
+                                to="/projecten/dakkapel"
                                 className="mt-8 inline-block rounded border border-primary bg-primary px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary"
                             >
                                 Meer Informatie

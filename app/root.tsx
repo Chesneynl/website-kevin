@@ -1,5 +1,5 @@
 import { LinksFunction } from '@remix-run/node';
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
+import { Link, Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
 
 import styles from './globals.css?url';
 import Header from './components/Header';
@@ -21,6 +21,27 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 {children}
                 <Footer />
                 <ScrollRestoration />
+                <Scripts />
+            </body>
+        </html>
+    );
+}
+
+export function ErrorBoundary() {
+    return (
+        <html lang="nl">
+            <head>
+                <title>Oops!</title>
+                <Meta />
+                <Links />
+            </head>
+            <body className="container text-center py-20 text-3xl ">
+                Oops, er ging iets mis!
+                <br />
+                <br />
+                <Link to="/" className="text-xl text-primary">
+                    Terug naar home
+                </Link>
                 <Scripts />
             </body>
         </html>

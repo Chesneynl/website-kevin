@@ -10,7 +10,7 @@ export const meta: MetaFunction = () => {
 export default function Privacybeleid() {
     return (
         <>
-            <BackgroundImageText title="Algemene voorwaarden" imageUrl="/images/dak-met-wapen.jpg" />
+            <BackgroundImageText title="Algemene voorwaarden" imageUrl="/images/dak-met-wapen.webp" />
 
             <div className="container mx-auto px-4 py-8">
                 <h1 className="text-2xl font-bold text-gray-900 mb-6">Algemene Voorwaarden</h1>
