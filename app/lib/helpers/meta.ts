@@ -3,6 +3,33 @@ export function getMeta(title: string) {
         { title: `${title} | Stulen bouwservice | Omgeving Utrecht ` },
         {
             property: 'og:image',
+            itemprop: 'image',
+            content: '/images/dak-met-wapen.webp',
+        },
+        {
+            property: 'og:title',
+            content: `${title} | Stulen bouwservice | Omgeving Utrecht `,
+        },
+        {
+            property: 'og:description',
+            content:
+                'Ontdek topkwaliteit in timmerwerk, burgerlijke en utiliteitsbouw, en renovatie werkzaamheden door uw lokale expert. Betrouwbaar, duurzaam en op maat gemaakt voor al uw bouwbehoeften.',
+        },
+        {
+            name: 'twitter:card',
+            content: 'summary_large_image',
+        },
+        {
+            name: 'twitter:title',
+            content: `${title} | Stulen bouwservice | Omgeving Utrecht `,
+        },
+        {
+            name: 'twitter:description',
+            content:
+                'Ontdek topkwaliteit in timmerwerk, burgerlijke en utiliteitsbouw, en renovatie werkzaamheden door uw lokale expert. Betrouwbaar, duurzaam en op maat gemaakt voor al uw bouwbehoeften.',
+        },
+        {
+            name: 'twitter:image',
             content: '/images/dak-met-wapen.webp',
         },
         {
