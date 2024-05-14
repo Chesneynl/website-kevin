@@ -4,7 +4,15 @@ export function getMeta(title: string) {
         {
             property: 'og:image',
             itemprop: 'image',
-            content: '/images/dak-met-wapen.webp',
+            content: 'https://stulenbouwservice.nl/images/dak-met-wapen.webp',
+        },
+        {
+            property: 'og:type',
+            content: 'website',
+        },
+        {
+            property: 'site_name',
+            content: 'Stulen bouwservice',
         },
         {
             property: 'og:title',
