@@ -11,6 +11,7 @@ export const meta: MetaFunction = () => {
 
 const ContactFormSchema = z.object({
     name: z.string().min(1, 'Naam is verplicht'),
+    subject: z.string().min(1, 'Onderwerp is verplicht'),
     email: z.string().email('Ongeldig e-mailadres'),
     tel: z.string().min(10, 'Telefoonnummer moet minimaal 10 tekens lang zijn'),
     message: z.string().min(20, 'Bericht moet minimaal 20 tekens lang zijn'),
@@ -20,12 +21,14 @@ export const action = async ({ request }: { request: Request }) => {
     const formData = await request.formData();
 
     const name = formData.get('name');
+    const subject = formData.get('subject');
     const email = formData.get('email');
     const tel = formData.get('tel');
     const message = formData.get('message');
 
     const result = ContactFormSchema.safeParse({
         name,
+        subject,
         email,
         tel,
         message,
@@ -44,6 +47,7 @@ export const action = async ({ request }: { request: Request }) => {
             subject: 'Reactie via contactformulier',
             html: `
                 <p>Er is een reactie via het contactformulier ontvangen:</p><br />
+                <p>Onderwerp: <strong>${subject}</strong></p>
                 <p>Naam: <strong>${name}</strong></p>
                 <p>Email: <strong>${email}/strong></p>
                 <p>Telefoonnummer: <strong>${tel}/strong></p>

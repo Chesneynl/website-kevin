@@ -20,6 +20,13 @@ export function ContactForm() {
                                 06 146 53 885
                             </a>
                         </div>
+
+                        <div className="mt-8">
+                            Liever mailen? <br />
+                            <a href="mailto:stulenbouwservice@gmail.com" className="text-2xl font-bold text-primary">
+                                stulenbouwservice@gmail.com
+                            </a>
+                        </div>
                     </div>
 
                     <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
@@ -83,6 +90,21 @@ export function ContactForm() {
                                             <p className="text-red text-xs pl-3 pt-3">{actionData.errors.tel}</p>
                                         )}
                                     </div>
+                                </div>
+
+                                <div>
+                                    <label className="sr-only" htmlFor="name">
+                                        Onderwerp
+                                    </label>
+                                    <input
+                                        className="w-full rounded-lg border-gray-200 p-3 text-sm border"
+                                        placeholder="Onderwerp"
+                                        name="subject"
+                                        type="text"
+                                    />
+                                    {actionData?.errors?.subject && (
+                                        <p className="text-red text-xs pl-3 pt-3">{actionData.errors.subject}</p>
+                                    )}
                                 </div>
 
                                 <div>

@@ -44,7 +44,7 @@ export function Showcase() {
 
                             <Link
                                 to="/projecten/dakkapel"
-                                className="mt-8 inline-block rounded border border-primary bg-primary px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary"
+                                className="mt-8 inline-block rounded border border-primary bg-primary px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary transition-all"
                             >
                                 Meer Informatie
                             </Link>

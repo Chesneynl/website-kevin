@@ -22,7 +22,7 @@ export default function Project() {
         },
         {
             imageUrl: 'dak-met-wapen.webp',
-            title: 'Dak met rabat',
+            title: 'Dak renovatie',
             url: 'dak-renovatie',
         },
         {
